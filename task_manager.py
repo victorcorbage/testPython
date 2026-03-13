@@ -108,3 +108,6 @@ class TaskManager:
             "completed": completed,
             "pending": pending
         }
+    
+    def _dict_to_task(self, task_data):
+        return Task.from_dict(task_data)
